@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+      nav { padding: 1rem 1.2rem; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 5rem;
+      }
+
+      .hero-left { padding: 3rem 1.5rem 2rem; }
+      .hero-right { height: 380px; }
+
+      .inside-grid { grid-template-columns: 1fr; }
+      .ingredients-grid { grid-template-columns: 1fr; }
+
+      .timeline { flex-direction: column; gap: 2rem; }
+      .timeline::before { display: none; }
+      .timeline-item { padding-top: 0; padding-left: 2rem; }
+      .timeline-dot { top: 2px; }
+
+      .trust-bar { gap: 1.5rem; }
+      .cta-box { padding: 2rem 1.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dew-circle { animation: none; }
+    }

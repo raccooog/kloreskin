@@ -1,0 +1,9 @@
+{
+  "name": "Kloré Skin",
+  "short_name": "Kloré",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6F1",
+  "theme_color": "#FAF6F1",
+  "icons": []
+}
