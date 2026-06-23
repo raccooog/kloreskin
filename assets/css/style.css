@@ -1058,3 +1058,316 @@ line-height:1.8;
 color:#6f6f6f;
 
 }
+/* ===========================
+   FAQ
+=========================== */
+
+.faq-section{
+
+padding:120px 0;
+
+background:#FAF6F1;
+
+}
+
+.faq{
+
+max-width:900px;
+
+margin:70px auto 0;
+
+}
+
+.faq-item{
+
+background:#ffffff;
+
+border-radius:22px;
+
+margin-bottom:18px;
+
+overflow:hidden;
+
+box-shadow:0 12px 35px rgba(0,0,0,.05);
+
+}
+
+.faq-question{
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:28px 35px;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+font-size:22px;
+
+font-family:'Playfair Display',serif;
+
+font-weight:600;
+
+color:#232323;
+
+text-align:left;
+
+}
+
+.faq-question span{
+
+font-size:34px;
+
+transition:.3s;
+
+}
+
+.faq-answer{
+
+max-height:0;
+
+overflow:hidden;
+
+transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+padding:0 35px 30px;
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+.faq-item.active .faq-answer{
+
+max-height:250px;
+
+}
+
+.faq-item.active .faq-question span{
+
+transform:rotate(45deg);
+
+}
+/* ===========================
+   GUARANTEE
+=========================== */
+
+.guarantee-section{
+
+padding:130px 0;
+
+background:#ffffff;
+
+}
+
+.guarantee-box{
+
+max-width:900px;
+
+margin:auto;
+
+padding:70px;
+
+background:#FAF6F1;
+
+border-radius:34px;
+
+text-align:center;
+
+box-shadow:0 25px 80px rgba(0,0,0,.06);
+
+}
+
+.guarantee-badge{
+
+display:inline-block;
+
+padding:10px 24px;
+
+background:#8FAF8F;
+
+color:white;
+
+border-radius:999px;
+
+font-size:14px;
+
+letter-spacing:.12em;
+
+text-transform:uppercase;
+
+margin-bottom:25px;
+
+}
+
+.guarantee-box h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:54px;
+
+margin-bottom:25px;
+
+color:#232323;
+
+}
+
+.guarantee-box>p{
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#666;
+
+max-width:700px;
+
+margin:0 auto 55px;
+
+}
+
+.guarantee-items{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+margin-bottom:55px;
+
+}
+
+.guarantee-items div{
+
+background:white;
+
+padding:28px;
+
+border-radius:22px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.05);
+
+}
+
+.guarantee-items h3{
+
+font-size:22px;
+
+margin-bottom:12px;
+
+}
+
+.guarantee-items p{
+
+font-size:16px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+/* ===========================
+   FINAL CTA
+=========================== */
+
+.final-cta{
+
+padding:140px 0;
+
+background:#FAF6F1;
+
+}
+
+.final-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:80px;
+
+}
+
+.final-left h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:58px;
+
+line-height:1.1;
+
+margin:20px 0;
+
+}
+
+.final-left p{
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:35px;
+
+}
+
+.final-list{
+
+list-style:none;
+
+padding:0;
+
+margin:0 0 45px;
+
+}
+
+.final-list li{
+
+padding:12px 0;
+
+font-size:18px;
+
+}
+
+.final-right{
+
+text-align:center;
+
+}
+
+.final-right img{
+
+max-width:430px;
+
+width:100%;
+
+filter:drop-shadow(0 35px 70px rgba(0,0,0,.18));
+
+transition:.35s;
+
+}
+
+.final-right img:hover{
+
+transform:translateY(-8px);
+
+}
