@@ -25,3 +25,86 @@
     @media (prefers-reduced-motion: reduce) {
       .dew-circle { animation: none; }
     }
+    /* ===========================
+   MOBILE PREVIEW
+=========================== */
+
+@media (max-width:768px){
+
+.preview-section{
+
+padding:70px 0;
+
+}
+
+.preview-slider{
+
+padding:20px;
+
+gap:20px;
+
+overflow-x:auto;
+
+}
+
+.preview-card{
+
+width:88vw;
+
+margin-left:0;
+
+flex:none;
+
+}
+
+.preview-card:hover{
+
+transform:none;
+
+}
+
+.preview-last::after{
+
+font-size:15px;
+
+padding:14px 22px;
+
+}
+
+.locked-content{
+
+margin:60px 20px;
+
+}
+
+.locked-title{
+
+font-size:34px;
+
+}
+
+.locked-subtitle{
+
+font-size:16px;
+
+margin-bottom:35px;
+
+}
+
+.locked-grid{
+
+grid-template-columns:1fr;
+
+gap:16px;
+
+}
+
+.locked-grid div{
+
+padding:20px;
+
+font-size:16px;
+
+}
+
+}
