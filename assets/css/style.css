@@ -733,17 +733,31 @@ margin-bottom:60px;
 
 }
 
-.preview-grid{
+.preview-slider{
+display:flex;
+gap:30px;
+overflow-x:auto;
+padding:20px 0 30px;
+scroll-behavior:smooth;
+scroll-snap-type:x mandatory;
+}
 
-display:grid;
+.preview-slider::-webkit-scrollbar{
+height:8px;
+}
 
-grid-template-columns:repeat(2,1fr);
+.preview-slider::-webkit-scrollbar-thumb{
+background:#d6d2cb;
+border-radius:20px;
+}
 
-gap:35px;
-
+.preview-slider::-webkit-scrollbar-track{
+background:transparent;
 }
 
 .preview-card{
+
+flex:0 0 420px;
 
 position:relative;
 
@@ -751,102 +765,144 @@ overflow:hidden;
 
 border-radius:28px;
 
-background:#fff;
+background:white;
 
 box-shadow:0 30px 70px rgba(0,0,0,.08);
 
-transition:.35s ease;
+scroll-snap-align:center;
+
+transition:.35s;
 
 }
 
 .preview-card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-8px);
 
 box-shadow:0 45px 90px rgba(0,0,0,.12);
 
 }
 
-.preview-card img{
+.preview-last img{
 
-display:block;
+filter:blur(12px);
 
-width:100%;
-
-height:auto;
+transform:scale(1.05);
 
 }
 
-.preview-last{
+.preview-last::before{
 
-grid-column:1/3;
-
-max-width:700px;
-
-margin:auto;
-
-}
-
-.locked-overlay{
+content:"";
 
 position:absolute;
 
-left:0;
+inset:0;
 
-right:0;
+background:rgba(255,255,255,.22);
 
-bottom:0;
+backdrop-filter:blur(3px);
 
-padding:40px;
+}
 
-background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.05));
+.preview-last::after{
 
-color:white;
+content:"🔒 Unlock to view Evening Routine";
 
-font-size:1.1rem;
+position:absolute;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+background:#ffffff;
+
+padding:18px 30px;
+
+border-radius:999px;
 
 font-weight:600;
 
-text-align:center;
+font-size:18px;
 
-backdrop-filter:blur(600px);
+box-shadow:0 15px 40px rgba(0,0,0,.12);
 
-}
-
-.preview-section .btn-primary{
-
-display:inline-block;
-
-margin-top:60px;
+white-space:nowrap;
 
 }
+
 .locked-content{
-max-width:700px;
-margin:50px auto 30px;
-padding:40px;
-background:#ffffff;
-border-radius:24px;
-box-shadow:0 20px 50px rgba(0,0,0,.06);
-}
 
-.locked-content h3{
-font-size:2rem;
-margin-bottom:25px;
+max-width:980px;
+
+margin:90px auto;
+
 text-align:center;
+
 }
 
-.locked-content ul{
-list-style:none;
-padding:0;
-margin:0;
+.locked-title{
+
+font-family:'Playfair Display',serif;
+
+font-size:54px;
+
+font-weight:600;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+color:#232323;
+
 }
 
-.locked-content li{
-padding:12px 0;
-font-size:1.1rem;
-border-bottom:1px solid #ececec;
+.locked-subtitle{
+
+max-width:700px;
+
+margin:0 auto 60px;
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#6f6f6f;
+
 }
 
-.locked-content li:last-child{
-border:none;
+.locked-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.locked-grid div{
+
+background:white;
+
+padding:26px;
+
+border-radius:20px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.05);
+
+font-size:18px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.locked-grid div:hover{
+
+transform:translateY(-6px);
+
 }
