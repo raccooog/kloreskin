@@ -820,3 +820,33 @@ display:inline-block;
 margin-top:60px;
 
 }
+.locked-content{
+max-width:700px;
+margin:50px auto 30px;
+padding:40px;
+background:#ffffff;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.06);
+}
+
+.locked-content h3{
+font-size:2rem;
+margin-bottom:25px;
+text-align:center;
+}
+
+.locked-content ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.locked-content li{
+padding:12px 0;
+font-size:1.1rem;
+border-bottom:1px solid #ececec;
+}
+
+.locked-content li:last-child{
+border:none;
+}
