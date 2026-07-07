@@ -62,6 +62,20 @@
       letter-spacing: 0.02em;
     }
 
+
+    .nav-link {
+      color: var(--charcoal);
+      font-size: 0.86rem;
+      font-weight: 500;
+      text-decoration: none;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .nav-link:hover {
+      color: var(--sage-dark);
+    }
     .nav-cta:hover { background: var(--sage-dark); }
 
     /* ── HERO ── */
@@ -1325,6 +1339,45 @@ transition:.35s;
 transform:translateY(-8px);
 
 }
+
+/* EDUCATION LINKS */
+
+.education-section {
+background:#ffffff;
+padding:90px 0;
+}
+
+.education-links {
+display:grid;
+gap:14px;
+margin-top:34px;
+max-width:680px;
+}
+
+.education-links a {
+border:1px solid var(--border);
+border-radius:8px;
+color:var(--charcoal);
+display:flex;
+align-items:center;
+justify-content:space-between;
+min-height:58px;
+padding:16px 18px;
+text-decoration:none;
+font-weight:600;
+background:#fff;
+}
+
+.education-links a::after {
+content:"→";
+color:var(--sage-dark);
+margin-left:16px;
+}
+
+.education-links a:hover {
+border-color:var(--sage);
+color:var(--sage-dark);
+}
 /* ===========================
    MOBILE RESPONSIVE
 =========================== */
@@ -1552,4 +1605,23 @@ margin-bottom:35px;
     background:#8FAF8F;
     border-color:#8FAF8F;
     color:#fff;
+}
+@media (max-width:560px){
+
+nav{
+padding:0.8rem 1rem;
+}
+
+.nav-right{
+gap:10px;
+}
+
+.nav-link{
+font-size:0.82rem;
+}
+
+.language-switch{
+display:none;
+}
+
 }
