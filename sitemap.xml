@@ -32,4 +32,8 @@
     <loc>https://kloreskin.shop/terms/</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://kloreskin.shop/blog/skin-barrier-signs/</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
