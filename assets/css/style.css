@@ -1,5 +1,4 @@
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --cream:     #FAF6F1;
@@ -283,6 +282,78 @@
 
      gap:6px;
 
+    }
+
+    /* ── LEAD MAGNET ── */
+    .lead-magnet {
+      background: var(--white);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .lead-magnet-box {
+      max-width: 560px;
+    }
+
+    .lead-magnet .section-label,
+    .lead-magnet .section-title,
+    .lead-magnet .section-desc {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lead-form {
+      display: flex;
+      gap: 0.7rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .lead-form input[type="email"] {
+      flex: 1 1 260px;
+      min-height: 52px;
+      padding: 0 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      background: var(--cream);
+      color: var(--charcoal);
+    }
+
+    .lead-form input[type="email"]:focus {
+      outline: none;
+      border-color: var(--sage);
+    }
+
+    .lead-form button {
+      background: var(--sage);
+      color: var(--white);
+      border: none;
+      padding: 0 1.8rem;
+      min-height: 52px;
+      border-radius: 100px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .lead-form button:hover { background: var(--sage-dark); }
+
+    .lead-form-note {
+      margin-top: 0.9rem;
+      font-size: 0.78rem;
+      color: var(--warm-gray);
+    }
+
+    @media (max-width: 560px) {
+      .lead-form { flex-direction: column; }
+      .lead-form input[type="email"],
+      .lead-form button { width: 100%; }
     }
 
     /* ── TRUST BAR ── */

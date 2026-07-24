@@ -40,7 +40,9 @@ gtag('config', 'G-C1ZYG4KRMK');
   <meta name="twitter:title" content="Kloré Skin — Полная система Glass Skin">
   <meta name="twitter:description" content="20-страничное руководство по корейскому уходу за кожей, ингредиентам и системе Glass Skin">
   <meta name="twitter:image" content="https://kloreskin.shop/assets/images/mockup.png">
-  <meta name="description" content="The Korean skincare system that gives you glass skin in 30 days. Science-backed. No fluff. Instant PDF download." />
+  <meta property="og:site_name" content="Kloré Skin">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -48,23 +50,82 @@ gtag('config', 'G-C1ZYG4KRMK');
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Product",
-  "name":"Полная система Glass Skin",
-  "brand":{
-    "@type":"Brand",
-    "name":"Kloré Skin"
-  },
-  "description":"Полное руководство по корейскому уходу за кожей. 20 страниц с утренней и вечерней рутиной, разбором ингредиентов, чек-листами и системой Glass Skin на 30 дней.",
-  "image":"https://kloreskin.shop/assets/images/mockup.png",
-  "url":"https://kloreskin.shop",
-  "category":"Digital Product",
-  "offers":{
-    "@type":"Offer",
-    "url":"https://kloreskin.gumroad.com/l/ru",
-    "price":"14.99",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock"
-  }
+  "@graph": [
+    {
+      "@type":"Product",
+      "name":"Полная система Glass Skin",
+      "brand":{
+        "@type":"Brand",
+        "name":"Kloré Skin"
+      },
+      "description":"Полное руководство по корейскому уходу за кожей. 20 страниц с утренней и вечерней рутиной, разбором ингредиентов, чек-листами и системой Glass Skin на 30 дней.",
+      "image":"https://kloreskin.shop/assets/images/mockup.png",
+      "url":"https://kloreskin.shop/ru/",
+      "category":"Digital Product",
+      "offers":{
+        "@type":"Offer",
+        "url":"https://kloreskin.gumroad.com/l/ru",
+        "price":"14.99",
+        "priceCurrency":"USD",
+        "availability":"https://schema.org/InStock"
+      }
+    },
+    {
+      "@type":"Organization",
+      "name":"Kloré Skin",
+      "url":"https://kloreskin.shop",
+      "logo":"https://kloreskin.shop/assets/images/mockup.png",
+      "sameAs":[
+        "https://tiktok.com/@klore.skin",
+        "https://instagram.com/klore.skin"
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"Это руководство подходит для новичков?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Да. Руководство разработано для абсолютных новичков и объясняет каждый шаг простым и понятным способом. Никаких предварительных знаний ухода за кожей не требуется."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Будет ли это работать для моего типа кожи?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Да. Руководство охватывает жирную, сухую, комбинированную и чувствительную кожу, помогая вам создать рутину, которая подходит для вашего конкретного типа кожи."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Как это отличается от бесплатных советов по уходу за кожей в интернете?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Вместо случайных советов из десятков видео и статей вы получите одну понятную систему, где всё расположено в правильной последовательности."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Когда я получу руководство?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Сразу после покупки. Как только ваш платеж будет завершен, Gumroad автоматически отправит PDF на ваш email для мгновенной загрузки."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Сколько страниц в руководстве?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Руководство содержит 20 страниц, заполненных практическими советами по корейскому уходу за кожей, объяснениями ингредиентов, трекерами и действенными рекомендациями."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -84,7 +145,7 @@ gtag('config', 'G-C1ZYG4KRMK');
       🇺🇸 English
     </a>
 
-    <a href="https://kloreskin.gumroad.com/l/ru"
+    <a href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=nav"
        class="nav-cta gumroad-button"
        target="_blank"
        rel="noopener noreferrer">
@@ -108,7 +169,7 @@ gtag('config', 'G-C1ZYG4KRMK');
      Полное руководство из 20 страниц с утренней и вечерней рутиной, объяснением ингредиентов, чек-листами, недельным планом ухода и системой Glass Skin на 30 дней. Подходит даже тем, кто только начинает разбираться в уходе за кожей.
     </p>
     <div class="hero-actions">
-      <a href="https://kloreskin.gumroad.com/l/ru" class="btn-primary gumroad-button">Получить гид</a>
+      <a href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=hero" class="btn-primary gumroad-button">Получить гид</a>
       <div class="hero-price">
         <strong>$14.99</strong> · 20 страниц · Мгновенная загрузка PDF
       </div>
@@ -121,7 +182,8 @@ gtag('config', 'G-C1ZYG4KRMK');
     <div class="dew-circle dew-3"></div>
     <img
     src="../assets/images/mockup.png"
-    alt="Полная система Glass Skin"
+    alt="Kloré Skin Полная система Glass Skin — обложка PDF-гайда"
+    fetchpriority="high"
     class="hero-mockup">
     </div>
   </div>
@@ -143,23 +205,23 @@ gtag('config', 'G-C1ZYG4KRMK');
 <div class="preview-slider">
 
 <div class="preview-card">
-<img src="../assets/images/preview/1.jpg" alt="">
+<img src="../assets/images/preview/1.jpg" alt="Обложка гайда Kloré Skin — Полная система Glass Skin" loading="lazy">
 </div>
 
 <div class="preview-card">
-<img src="../assets/images/preview/2.jpg" alt="">
+<img src="../assets/images/preview/2.jpg" alt="Страница гайда: утренняя рутина корейского ухода за кожей" loading="lazy">
 </div>
 
 <div class="preview-card">
-<img src="../assets/images/preview/3.jpg" alt="">
+<img src="../assets/images/preview/3.jpg" alt="Страница гайда: гид по ингредиентам корейской косметики" loading="lazy">
 </div>
 
 <div class="preview-card">
-<img src="../assets/images/preview/4.jpg" alt="">
+<img src="../assets/images/preview/4.jpg" alt="Страница гайда: недельный планер ухода за кожей" loading="lazy">
 </div>
 
 <div class="preview-card preview-last">
-<img src="../assets/images/preview/5.jpg" alt="">
+<img src="../assets/images/preview/5.jpg" alt="Заблокированная страница: вечерняя рутина, доступна после покупки" loading="lazy">
 </div>
 
 </div>
@@ -193,7 +255,7 @@ gtag('config', 'G-C1ZYG4KRMK');
 
 </div>
 
-<a href="https://kloreskin.gumroad.com/l/ru" class="btn-primary">
+<a href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=preview_unlock" class="btn-primary">
 Открыть полное руководство →
 </a>
 
@@ -383,7 +445,7 @@ FAQ
 </div>
 
 <a
-href="https://kloreskin.gumroad.com/l/ru"
+href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=guarantee_section"
 target="_blank"
 class="hero-button">
 
@@ -440,7 +502,7 @@ class="hero-button">
 
 </ul>
 
-<a href="https://kloreskin.gumroad.com/l/ru"
+<a href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=final_cta"
 target="_blank"
 class="hero-button">
 
@@ -453,8 +515,9 @@ class="hero-button">
 <div class="final-right">
 
 <img
-src="assets/images/mockup.png"
-alt="Полная система Glass Skin">
+src="../assets/images/mockup.png"
+alt="Полная система Glass Skin — PDF-гайд по корейскому уходу за кожей"
+loading="lazy">
 
 </div>
 
@@ -462,6 +525,21 @@ alt="Полная система Glass Skin">
 
 </div>
 
+</section>
+
+<!-- LEAD MAGNET / EMAIL CAPTURE -->
+<section class="lead-magnet">
+  <div class="container lead-magnet-box">
+    <div class="section-label">Бесплатный мини-гайд</div>
+    <h2 class="section-title">Ещё не готовы купить? Начните бесплатно.</h2>
+    <p class="section-desc">Получите бесплатный чек-лист базовой рутины на 3 страницы на почту — плюс промокод на полное руководство.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="lead-form">
+      <input type="email" name="email" placeholder="Ваш email" required>
+      <button type="submit">Прислать бесплатный гайд</button>
+    </form>
+    <p class="lead-form-note">Без спама. Отписаться можно в любой момент.</p>
+  </div>
 </section>
 
 <!-- TRUST BAR -->
@@ -640,7 +718,7 @@ alt="Полная система Glass Skin">
         <div class="cta-price-note">Одноразовый · Мгновенный доступ · Загрузка в формате PDF</div>
       </div>
 
-      <a href="https://kloreskin.gumroad.com/l/ru" class="btn-cta gumroad-button">
+      <a href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=cta_section" class="btn-cta gumroad-button">
         Получить мгновенный доступ →
       </a>
 
@@ -655,7 +733,7 @@ alt="Полная система Glass Skin">
 <footer>
   <div class="footer-logo">Kloré Skin</div>
   <div class="footer-links">
-    <a href="https://kloreskin.gumroad.com/l/ru">Магазин</a>
+    <a href="https://kloreskin.gumroad.com/l/ru?utm_source=website&utm_medium=cta&utm_content=footer">Магазин</a>
     <a href="https://tiktok.com/@klore.skin" target="_blank">TikTok</a>
     <a href="https://instagram.com/klore.skin" target="_blank">Instagram</a>
     <a href="mailto:kloreskin@gmail.com">Контакт</a>
